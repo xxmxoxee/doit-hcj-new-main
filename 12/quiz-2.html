@@ -15,6 +15,14 @@
     .container {      
       width: 600px; 
       height: 500px; 
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: 
+        "item1 item1 item2 item2"
+        "item1 item1 item3 item4"
+        "item5 item5 item3 item4";
+      gap: 20px;
     }
     .grid-item {
       background-color: yellow; /* 아이템 배경색 */
@@ -22,7 +30,11 @@
       text-align: center;
       font-size: 1.5em;
     }
-
+    .item1 { grid-area: item1;}
+    .item2 { grid-area: item2;}
+    .item3 { grid-area: item3;}
+    .item4 { grid-area: item4;}
+    .item5 { grid-area: item5;}
   </style>
 </head>
 <body>
