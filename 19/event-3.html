@@ -28,7 +28,10 @@
 
 	<script>
 		// Do it! event 객체 사용하기
-
+		let container = document.querySelector('.container');
+		container.onclick = (event) => {
+			alert(`이벤트 발생 위치 : ${event.pageX}, ${event.pageY}`);
+		}
 	</script>
 </body>
 </html>
